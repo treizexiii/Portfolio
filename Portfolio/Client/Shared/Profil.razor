@@ -1,0 +1,17 @@
+@inject IGithubService GithubService
+
+<div class="container text-center">
+    <img class="photo" src="images/jonathan.webp" alt="Jonathan">
+    <h1 class="display-2 mb-3">Hello, I'm @owner.Name a C# developper</h1>
+</div>
+
+@code {
+    protected Owner owner = new Owner();
+    protected string linkedin = "https://www.linkedin.com/in/jonathan-rougier-9b46a81b/";
+    protected string twitter = "https://twitter.com/darktreize";
+
+    protected override async Task OnInitializedAsync()
+    {
+        owner = await GithubService.GetOwner();
+    }
+}

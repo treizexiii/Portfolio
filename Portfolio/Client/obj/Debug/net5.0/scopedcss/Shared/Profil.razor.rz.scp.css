@@ -1,0 +1,43 @@
+.container[b-kxq6vypf7o] {
+    display: flex;
+    text-align: center;
+    color: black;
+    align-items: center;
+}
+
+.linking[b-kxq6vypf7o] {
+    display: flex;
+    -ms-flex-align: center;
+    text-align: center;
+}
+
+.linking a[b-kxq6vypf7o] {
+    text-align: center;
+}
+
+.photo[b-kxq6vypf7o] {
+    height: 600px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.photo:hover[b-kxq6vypf7o] {
+    transition-delay: 150ms;
+    transition-property:all;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+
+.centered[b-kxq6vypf7o] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}

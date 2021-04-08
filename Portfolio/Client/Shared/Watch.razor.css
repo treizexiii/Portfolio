@@ -1,0 +1,13 @@
+.title {
+    text-decoration: underline;
+    margin-top: 0.5rem;
+}
+
+p {
+    margin-bottom: 0rem;
+    text-align: justify;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,62 @@
+@inject IGithubService GithubService
+
+<div class="container text-center">
+    <h1 class="mb-3 display-2">Projets</h1>
+    @if (GithubService.Repos.Count() <= 1)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <div class="row">
+            <div class="card mb-3 mr-3 shadow-lg p-6 mb-5 bg-white rounded" style="width: 18rem; height:22rem;">
+                <img src="@hlRep1.Logo" class="card-img-top" alt="@hlRep1.Name">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@hlRep1.Name</h5>
+                    <p class="card-text">@hlRep1.Description</p>
+                </div>
+                <a href="@hlRep1.Svn_url" class="card-footer">Take a look...</a>
+            </div>
+            <div class="card mb-3 mr-3 shadow-lg p-6 mb-5 bg-white rounded" style="width: 18rem; height:22rem;">
+                <img src="@hlRep2.Logo" class="card-img-top" alt="@hlRep2.Name">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@hlRep2.Name</h5>
+                    <p class="card-text">@hlRep2.Description</p>
+                </div>
+                <a href="@hlRep2.Svn_url" class="card-footer">Take a look...</a>
+            </div>
+            <div class="card mb-3 mr-3 shadow-lg p-6 bg-white rounded" style="width: 18rem; height:22rem;">
+                <img src="@hlRep3.Logo" class="card-img-top logo" alt="@hlRep3.Name">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@hlRep3.Name</h5>
+                    <p class="card-text">@hlRep3.Description</p>
+                </div>
+                <a href="@hlRep3.Svn_url" class="card-footer">Take a look...</a>
+            </div>
+            <AllRepo></AllRepo>
+        </div>
+    }
+</div>
+
+@code {
+    private List<Repos> repos = new List<Repos>();
+    private Repos hlRep1 = new Repos();
+    private Repos hlRep2 = new Repos();
+    private Repos hlRep3 = new Repos();
+    private int marker = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await GithubService.LoadRepos();
+        hlRep1 = await GithubService.GetRepos("BlazorShop");
+        hlRep3 = await GithubService.GetRepos("siteOsteo");
+        hlRep2 = await highLigthRepoAsync();
+    }
+
+    protected async Task<Repos> highLigthRepoAsync()
+    {
+        var rand = new Random();
+        var repo = GithubService.Repos.ElementAt(rand.Next(GithubService.Repos.Count));
+        return await GithubService.GetRepos(repo.Name);
+    }
+}

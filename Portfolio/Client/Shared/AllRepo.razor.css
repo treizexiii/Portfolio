@@ -1,0 +1,29 @@
+.card:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.row {
+    justify-content: center;
+}
+
+.repo {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}

@@ -1,0 +1,29 @@
+.card:hover[b-939ogywc0l] {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.row[b-939ogywc0l] {
+    justify-content: center;
+}
+
+.repo[b-939ogywc0l] {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow[b-939ogywc0l] {
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover[b-939ogywc0l] {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}

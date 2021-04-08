@@ -1,0 +1,23 @@
+﻿@inject IFeedService FeedService
+
+<div class="container text-center">
+    <h1 class="display-2 mb-3">Veille technologique</h1>
+</div>
+
+@foreach (var feed in FeedService.Feeds.Take(5))
+{
+    <div class="article">
+        <h5 class="title">@feed.Title</h5>
+        <p>@feed.PubDate<br>
+        @feed.Description</p>
+        <a class="mt-0" href="@feed.Link">Link</a>
+    </div>
+}
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FeedService.LoadFeeds();
+    }
+}
