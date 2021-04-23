@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Developpement\\projet C#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj": {}
+    "D:\\Projet c#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj": {}
   },
   "projects": {
-    "E:\\Developpement\\projet C#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj": {
+    "D:\\Projet c#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Developpement\\projet C#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj",
+        "projectUniqueName": "D:\\Projet c#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj",
         "projectName": "Portfolio.Shared",
-        "projectPath": "E:\\Developpement\\projet C#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj",
-        "packagesPath": "C:\\Users\\darkt\\.nuget\\packages\\",
-        "outputPath": "E:\\Developpement\\projet C#\\Portfolio\\Portfolio\\Shared\\obj\\",
+        "projectPath": "D:\\Projet c#\\Portfolio\\Portfolio\\Shared\\Portfolio.Shared.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "D:\\Projet c#\\Portfolio\\Portfolio\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\darkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.3.21202.5\\RuntimeIdentifierGraph.json"
         }
       }
     }

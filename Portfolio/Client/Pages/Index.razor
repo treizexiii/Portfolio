@@ -1,10 +1,23 @@
 ﻿@page "/"
 @inject IGithubService GithubService
 
-<Profil></Profil>
+<BlazorAnimate.Animate Animation="Animations.FlipUp" Duration="TimeSpan.FromSeconds(0.5)"
+    Delay="TimeSpan.FromSeconds(1)">
+    <Profil></Profil>
+</BlazorAnimate.Animate>
 <br>
-<Watch></Watch>
+<hr>
 <br>
-<GitRepos></GitRepos>
+<BlazorAnimate.Animate Animation="Animations.FadeUpRight" Duration="TimeSpan.FromSeconds(0.5)"
+    Delay="TimeSpan.FromSeconds(1)">
+    <Watch></Watch>
+</BlazorAnimate.Animate>
+<br>
+<hr>
+<br>
+<BlazorAnimate.Animate Animation="Animations.FadeUpLeft" Duration="TimeSpan.FromSeconds(0.5)"
+    Delay="TimeSpan.FromSeconds(1)">
+    <GitRepos></GitRepos>
+</BlazorAnimate.Animate>
 
 <SurveyPrompt Title="How is Blazor working for you?" />

@@ -41,3 +41,12 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
+
+@media (max-width:1030px) {
+    .container[b-kxq6vypf7o] {
+        flex-direction: column;
+        text-align: center;
+        color: black;
+        align-items: center;
+    }
+}

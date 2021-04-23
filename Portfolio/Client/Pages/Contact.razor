@@ -1,0 +1,45 @@
+@page "/contact"
+@inject IMailService MailService
+@inject NavigationManager NavigationManager
+@inject HttpClient http
+
+<div class="container">
+    <h1 class="display-2 mb-3">Contact</h1>
+    <EditForm asp-action="" Model="@mail" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <div class="form-group">
+            <label for="username">Name : </label>
+            <InputText id="username" @bind-Value="mail.Username" class="form-control"></InputText>
+            <ValidationMessage For="(() => mail.Username)" />
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail : </label>
+            <InputText id="email" @bind-Value="mail.UserEmail" class="form-control"></InputText>
+            <ValidationMessage For="@(() => mail.UserEmail)"></ValidationMessage>
+
+        </div>
+        <div class="form-group">
+            <label for="content">Name : </label>
+            <InputTextArea id="content" @bind-Value="mail.Content" class="form-control"></InputTextArea>
+            <ValidationMessage For="(() => mail.Content)" />
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </EditForm>
+</div>
+
+@code {
+    private Mail mail = new Mail();
+    private EditContext editContext;
+
+    protected override void OnInitialized()
+    {
+        editContext = new EditContext(mail);
+    }
+
+    private void HandleValidSubmit()
+    {
+        mail.Subject = "Testing mailling";
+        var result = MailService.SendMessage(mail);
+        NavigationManager.NavigateTo("/");
+    }
+}

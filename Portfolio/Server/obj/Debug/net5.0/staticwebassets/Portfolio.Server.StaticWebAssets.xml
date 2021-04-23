@@ -1,5 +1,6 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="E:\Developpement\projet C#\Portfolio\Portfolio\Client\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="E:\Developpement\projet C#\Portfolio\Portfolio\Client\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="/" Path="E:\Developpement\projet C#\Portfolio\Portfolio\Client\wwwroot\" />
+  <ContentRoot BasePath="_content/BlazorAnimate" Path="C:\Users\Jonathan\.nuget\packages\blazoranimate\3.0.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="D:\Projet c#\Portfolio\Portfolio\Client\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Projet c#\Portfolio\Portfolio\Client\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\Projet c#\Portfolio\Portfolio\Client\wwwroot\" />
 </StaticWebAssets>

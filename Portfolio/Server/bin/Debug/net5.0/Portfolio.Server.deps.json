@@ -320,6 +320,22 @@
           "Portfolio.Server.dll": {}
         }
       },
+      "BlazorAnimate/3.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "5.0.4",
+          "Microsoft.AspNetCore.Components.Web": "5.0.4",
+          "MinVer": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorAnimate.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorAnimate.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/5.0.4": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "5.0.4",
@@ -556,6 +572,7 @@
       },
       "Microsoft.NETCore.Platforms/1.0.1": {},
       "Microsoft.NETCore.Targets/1.0.1": {},
+      "MinVer/2.0.0": {},
       "Newtonsoft.Json/9.0.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -919,6 +936,7 @@
       },
       "Portfolio.Client/1.0.0": {
         "dependencies": {
+          "BlazorAnimate": "3.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.4",
           "Microsoft.Extensions.Http": "5.0.0",
           "Octokit.GraphQL": "0.1.7-beta",
@@ -2598,6 +2616,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BlazorAnimate/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IUX/IFdEKiQ5ncZ5/iVhaZynWL2dA04lH9ieza9JhBj/jJH8f2NwM6OqdJFm7RfkFdbkIH8t2Bxd/laZS2EXWQ==",
+      "path": "blazoranimate/3.0.0",
+      "hashPath": "blazoranimate.3.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authorization/5.0.4": {
       "type": "package",
       "serviceable": true,
@@ -2793,6 +2818,13 @@
       "sha512": "sha512-rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
       "path": "microsoft.netcore.targets/1.0.1",
       "hashPath": "microsoft.netcore.targets.1.0.1.nupkg.sha512"
+    },
+    "MinVer/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1U1JIwD47a/m9S1LXdDm+fByP3LYR9hTeFfi1MlizScXF4e4yUpZvunEyQAovVfi4qYaUlVzIbk08OXFfz3FfQ==",
+      "path": "minver/2.0.0",
+      "hashPath": "minver.2.0.0.nupkg.sha512"
     },
     "Newtonsoft.Json/9.0.1": {
       "type": "package",

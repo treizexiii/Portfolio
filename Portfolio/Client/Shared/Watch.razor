@@ -1,16 +1,15 @@
 ﻿@inject IFeedService FeedService
 
 <div class="container text-center">
-    <h1 class="display-2 mb-3">Veille technologique</h1>
+    <h1 class="display-2 mb-3">News about c#</h1>
 </div>
 
 @foreach (var feed in FeedService.Feeds.Take(5))
 {
-    <div class="article">
-        <h5 class="title">@feed.Title</h5>
+    <div class="article mb-3">
+        <a class="mt-0" href="@feed.Link" target="_blank"><h5 class="title">@feed.Title</h5></a>
         <p>@feed.PubDate<br>
         @feed.Description</p>
-        <a class="mt-0" href="@feed.Link">Link</a>
     </div>
 }
 

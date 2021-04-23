@@ -15,6 +15,7 @@ namespace Portfolio.Client.Services.GithubServices
         public List<Repos> Repos { get; set; } = new List<Repos>();
         private readonly HttpClient _http;
         private readonly Connection _connection;
+        public event Action OnChange;
 
         public GithubService(HttpClient http)
         {
@@ -34,14 +35,14 @@ namespace Portfolio.Client.Services.GithubServices
             return owner;
         }
 
-        public async Task LoadRepos()
+        public async Task LoadRepos(int marker)
         {
-            Repos = await _http.GetFromJsonAsync<List<Repos>>("/users/treizexiii/repos");
+            Repos = await _http.GetFromJsonAsync<List<Repos>>("/users/treizexiii/repos?sort=created&per_page=6&page=" + marker);
         }
 
         public async Task<Repos> GetRepos(string name)
         {
-            var rep = Repos.FirstOrDefault(r => r.Name == name);
+            var rep = await _http.GetFromJsonAsync<Repos>("repos/treizexiii/" + name);
 
             var query = new Query()
                 .RepositoryOwner(rep.Owner.Login)

@@ -95,7 +95,7 @@
         text-overflow: ellipsis;
     }
 
-@media (max-width: 640.98px) {
+@media (max-width: 695px) {
     .top-row:not(.auth)[b-qt3v734e0f] {
         display: none;
     }
@@ -109,7 +109,7 @@
     }
 }
 
-@media (min-width: 641px) {
+@media (min-width: 695px) {
     .page[b-qt3v734e0f] {
         flex-direction: row;
     }
@@ -185,7 +185,7 @@
     color: white;
 }
 
-@media (min-width: 641px) {
+@media (min-width: 695px) {
     .navbar-toggler[b-sg3paodnx8] {
         display: none;
     }
@@ -238,6 +238,15 @@
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+}
+
+@media (max-width:1030px) {
+    .container[b-kxq6vypf7o] {
+        flex-direction: column;
+        text-align: center;
+        color: black;
+        align-items: center;
+    }
 }
 /* /Shared/Watch.razor.rz.scp.css */
 .title[b-qz5mgjvctq] {

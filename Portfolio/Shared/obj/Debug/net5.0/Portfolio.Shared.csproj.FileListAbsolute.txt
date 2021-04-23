@@ -10,3 +10,15 @@ E:\Developpement\projet C#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio
 E:\Developpement\projet C#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.dll
 E:\Developpement\projet C#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\ref\Portfolio.Shared.dll
 E:\Developpement\projet C#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.pdb
+D:\Projet c#\Portfolio\Portfolio\Shared\bin\Debug\net5.0\Portfolio.Shared.deps.json
+D:\Projet c#\Portfolio\Portfolio\Shared\bin\Debug\net5.0\Portfolio.Shared.dll
+D:\Projet c#\Portfolio\Portfolio\Shared\bin\Debug\net5.0\ref\Portfolio.Shared.dll
+D:\Projet c#\Portfolio\Portfolio\Shared\bin\Debug\net5.0\Portfolio.Shared.pdb
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.AssemblyInfoInputs.cache
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.AssemblyInfo.cs
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.csproj.CoreCompileInputs.cache
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.dll
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\ref\Portfolio.Shared.dll
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.pdb
+D:\Projet c#\Portfolio\Portfolio\Shared\obj\Debug\net5.0\Portfolio.Shared.csproj.AssemblyReference.cache
