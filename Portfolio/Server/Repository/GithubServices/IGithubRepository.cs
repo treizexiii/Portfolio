@@ -8,7 +8,8 @@ namespace Portfolio.Server.Repository.GithubServices
 {
     public interface IGithubRepository
     {
-        Task<Owner> FindOwner(string Name);
-        Task<List<Repos>> FindRepos(string Name);
+        Task<Owner> FindOwner();
+        Task<List<Repos>> LoadRepos(int marker);
+        Task<Repos> GetRepo(string name);
     }
 }

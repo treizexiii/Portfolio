@@ -124,4 +124,4 @@ D:\Projet c#\Portfolio\Portfolio\Server\obj\Debug\net5.0\ref\Portfolio.Server.dl
 D:\Projet c#\Portfolio\Portfolio\Server\obj\Debug\net5.0\Portfolio.Server.pdb
 D:\Projet c#\Portfolio\Portfolio\Server\obj\Debug\net5.0\Portfolio.Server.genruntimeconfig.cache
 D:\Projet c#\Portfolio\Portfolio\Server\bin\Debug\net5.0\BlazorAnimate.dll
-D:\Projet c#\Portfolio\Portfolio\Server\obj\Debug\net5.0\Portfolio.Server.csproj.AssemblyReference.cache
+D:\Projet c#\Portfolio\Portfolio\Server\obj\Debug\net5.0\Portfolio.Server.csprojAssemblyReference.cache

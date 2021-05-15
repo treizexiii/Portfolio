@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Net;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Portfolio.Server.Repository.GithubServices;
 using Portfolio.Shared;
@@ -20,16 +21,22 @@ namespace Portfolio.Server.Controllers
             _github = github;
         }
 
-        [HttpGet("{name}")]
-        public async Task<ActionResult<Owner>> GetOwner(string name)
+        [HttpGet]
+        public async Task<ActionResult<Owner>> GetOwner()
         {
-            return Ok(await _github.FindOwner(name));
+            return Ok(await _github.FindOwner());
         }
 
-        [HttpGet("Repos/{repos}")]
-        public async Task<ActionResult<List<Repos>>> GetRepos(string repos)
+        [HttpGet("Repos/{marker}")]
+        public async Task<ActionResult<List<Repos>>> LoadRepos(int marker)
         {
-            return Ok(await _github.FindRepos(repos));
+            return Ok(await _github.LoadRepos(marker));
+        }
+
+        [HttpGet("{name}")]
+        public async Task<ActionResult<Repos>> GetRepo(string name)
+        {
+            return Ok(await _github.GetRepo(name));
         }
     }
 }

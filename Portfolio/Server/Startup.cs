@@ -1,10 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Portfolio.Server.Repository.MailService;
 using Portfolio.Server.Repository.FeedService;
 using Portfolio.Server.Repository.GithubServices;
 using System.Net.Http;
@@ -25,9 +24,11 @@ namespace Portfolio.Server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped(sp => new HttpClient());
-            services.AddControllersWithViews();    
+            services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddScoped<IMailService, MailService>();
             services.AddScoped<IFeedRepository, FeedRepository>();
+            services.AddScoped<IGithubRepository, GithubRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

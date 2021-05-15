@@ -1,4 +1,5 @@
-﻿using Octokit.GraphQL;
+﻿using Microsoft.Extensions.Configuration;
+using Octokit.GraphQL;
 using Portfolio.Shared;
 using System;
 using System.Collections.Generic;
@@ -13,36 +14,43 @@ namespace Portfolio.Server.Repository.GithubServices
     public class GithubRepository : IGithubRepository
     {
         private readonly HttpClient _http;
+        private readonly IConfiguration _configuration;
         private readonly Connection _connection;
 
-        public GithubRepository(HttpClient http)
+        public GithubRepository(HttpClient http, IConfiguration configuration)
         {
             _http = http;
+            _configuration = configuration;
             _http.BaseAddress = new Uri("https://api.github.com");
             _http.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("portfolio", "1.0"));
             _http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", "API_KEY");
+            _http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Token", _configuration.GetSection("AuthKey:Github").Value);
 
             var productInformation = new Octokit.GraphQL.ProductHeaderValue("portfolio", "1.0");
-            _connection = new Connection(productInformation, "API_KEY");
+            _connection = new Connection(productInformation, _configuration.GetSection("AuthKey:Github").Value);
         }
 
-        public async Task<Owner> FindOwner(string name)
+        public async Task<Owner> FindOwner()
         {
-            return await _http.GetFromJsonAsync<Owner>("/users/" + name);
+            return await _http.GetFromJsonAsync<Owner>("/users/treizexiii");
         }
 
-        public async Task<List<Repos>> FindRepos(string name)
+        public async Task<List<Repos>> LoadRepos(int marker)
         {
-            var repos = await _http.GetFromJsonAsync<List<Repos>>("/users/" + name + "/repos");
-            foreach (var item in repos)
-            {
-                var query = new Query().RepositoryOwner(item.Owner.Login).Repository(item.Name)
-                    .Select(r => new { r.OpenGraphImageUrl }).Compile();
+            return await _http.GetFromJsonAsync<List<Repos>>("/users/treizexiii/repos?sort=created&per_page=6&page=" + marker);
+        }
 
+        public async Task<Repos> GetRepo(string name)
+        {
+            var repos = await _http.GetFromJsonAsync<Repos>("/repos/treizexiii/" + name);
+
+                var query = new Query()
+                    .RepositoryOwner(repos.Owner.Login)
+                    .Repository(repos.Name)
+                    .Select(r => new { r.OpenGraphImageUrl })
+                    .Compile();
                 var result = await _connection.Run(query);
-                item.Logo = result.OpenGraphImageUrl;
-            }
+                repos.Logo = result.OpenGraphImageUrl;
 
             return repos;
         }

@@ -14,18 +14,11 @@ namespace Portfolio.Server.Repository.FeedService
     {
         public string Feeds { get; set; }
         private readonly HttpClient _http;
-        //private readonly HttpRequestMessage _request;
 
         public FeedRepository(HttpClient http)
         {
             _http = http;
             _http.BaseAddress = new Uri("https://visualstudiomagazine.com/");
-            //_request = new HttpRequestMessage()
-            //{
-            //    Method = new HttpMethod("GET"),
-            //    RequestUri = new Uri("https://www.c-sharpcorner.com/"),
-            //};
-            //_request.SetBrowserRequestMode(BrowserRequestMode.NoCors);
         }
 
         public async Task<string> GetFeedRssAsync()

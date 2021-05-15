@@ -4259,35 +4259,35 @@
         }
       },
       {
-        "HashCode": 1935909401,
+        "HashCode": -483142792,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.App",
+        "Name": "Portfolio.Client.Pages.Contact",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.App"
+          "Common.TypeName": "Portfolio.Client.Pages.Contact"
         }
       },
       {
-        "HashCode": -1921713691,
+        "HashCode": -1674298254,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.App",
+        "Name": "Portfolio.Client.Pages.Contact",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Client.App"
+            "TagName": "Portfolio.Client.Pages.Contact"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.App",
+          "Common.TypeName": "Portfolio.Client.Pages.Contact",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4321,6 +4321,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Portfolio.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1906523703,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Client.Pages.Counter",
+        "AssemblyName": "Portfolio.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Portfolio.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -113914047,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Client.Pages.Counter",
+        "AssemblyName": "Portfolio.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Portfolio.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Portfolio.Client.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4411,68 +4444,68 @@
         }
       },
       {
-        "HashCode": 362906706,
+        "HashCode": -2047031440,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.AllRepo",
+        "Name": "Portfolio.Client.Shared.Profil",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AllRepo"
+            "TagName": "Profil"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.AllRepo"
+          "Common.TypeName": "Portfolio.Client.Shared.Profil"
         }
       },
       {
-        "HashCode": -421323369,
+        "HashCode": -971087363,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.AllRepo",
+        "Name": "Portfolio.Client.Shared.Profil",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Client.Shared.AllRepo"
+            "TagName": "Portfolio.Client.Shared.Profil"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.AllRepo",
+          "Common.TypeName": "Portfolio.Client.Shared.Profil",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1430664570,
+        "HashCode": 84867167,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.GitRepos",
+        "Name": "Portfolio.Client.Shared.Watch",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GitRepos"
+            "TagName": "Watch"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.GitRepos"
+          "Common.TypeName": "Portfolio.Client.Shared.Watch"
         }
       },
       {
-        "HashCode": -1313115736,
+        "HashCode": -216084418,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.GitRepos",
+        "Name": "Portfolio.Client.Shared.Watch",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Client.Shared.GitRepos"
+            "TagName": "Portfolio.Client.Shared.Watch"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.GitRepos",
+          "Common.TypeName": "Portfolio.Client.Shared.Watch",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4606,68 +4639,101 @@
         }
       },
       {
-        "HashCode": -2047031440,
+        "HashCode": 362906706,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.Profil",
+        "Name": "Portfolio.Client.Shared.AllRepo",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Profil"
+            "TagName": "AllRepo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.Profil"
+          "Common.TypeName": "Portfolio.Client.Shared.AllRepo"
         }
       },
       {
-        "HashCode": -971087363,
+        "HashCode": -421323369,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.Profil",
+        "Name": "Portfolio.Client.Shared.AllRepo",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Client.Shared.Profil"
+            "TagName": "Portfolio.Client.Shared.AllRepo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.Profil",
+          "Common.TypeName": "Portfolio.Client.Shared.AllRepo",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 84867167,
+        "HashCode": 1430664570,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.Watch",
+        "Name": "Portfolio.Client.Shared.GitRepos",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Watch"
+            "TagName": "GitRepos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.Watch"
+          "Common.TypeName": "Portfolio.Client.Shared.GitRepos"
         }
       },
       {
-        "HashCode": -216084418,
+        "HashCode": -1313115736,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Client.Shared.Watch",
+        "Name": "Portfolio.Client.Shared.GitRepos",
         "AssemblyName": "Portfolio.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Client.Shared.Watch"
+            "TagName": "Portfolio.Client.Shared.GitRepos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Portfolio.Client.Shared.Watch",
+          "Common.TypeName": "Portfolio.Client.Shared.GitRepos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1935909401,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Client.App",
+        "AssemblyName": "Portfolio.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Portfolio.Client.App"
+        }
+      },
+      {
+        "HashCode": -1921713691,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Client.App",
+        "AssemblyName": "Portfolio.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Portfolio.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Portfolio.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
